@@ -1,0 +1,118 @@
+/* Soft neon cool theme */
+#soft-theme {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background: linear-gradient(160deg, #c7d4ff, #b8c2ff, #d7c8ff);
+  color: #2a2d34;
+}
+
+/* Header */
+#page-header {
+  text-align: center;
+  padding: 35px 10px 15px;
+}
+
+.main-title {
+  margin: 0;
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #3d4f91;
+  text-shadow: 0 0 12px rgba(120, 140, 255, 0.6);
+}
+
+.subtitle {
+  margin-top: 6px;
+  font-style: italic;
+  color: #5c6b9a;
+}
+
+/* Intro */
+#intro {
+  max-width: 750px;
+  margin: 0 auto 25px;
+  padding: 0 15px;
+  line-height: 1.6;
+  color: #3a4455;
+}
+
+/* Table wrapper */
+#table-wrapper {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  padding: 0 15px;
+}
+
+/* Table styling */
+#planets {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 25px rgba(70, 80, 120, 0.35);
+  animation: fadeIn 0.8s ease;
+}
+
+/* Cells */
+#planets th,
+#planets td {
+  padding: 14px 18px;
+  border-bottom: 1px solid #d4d9e2;
+  text-align: center;
+}
+
+/* Header row */
+.header-row th {
+  background: linear-gradient(90deg, #aebaff, #c7d4ff);
+  color: #2f3a6b;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+/* Left column labels */
+.row-label {
+  text-align: left;
+  font-weight: 600;
+  color: #4b5670;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* Planet images */
+.planet-img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 6px rgba(150, 160, 255, 0.7));
+  transition: transform 0.25s ease;
+}
+
+.planet-img:hover {
+  transform: scale(1.12);
+}
+
+/* Soft striped rows */
+.striped td {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+/* Hover effect */
+#planets tr:hover td {
+  background: rgba(200, 210, 255, 0.35);
+  transition: 0.25s ease;
+}
+
+/* Footer */
+#page-footer {
+  text-align: center;
+  padding: 20px 10px 30px;
+  font-size: 0.9rem;
+  color: #4e5a7a;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
